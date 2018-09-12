@@ -4,17 +4,17 @@ using System.Collections;
 public class ButtunGenerator : MonoBehaviour
 {
     //pushpressPrefabを入れる
-    public GameObject buttun_flick1;
+    //public GameObject buttun_flick1;
     //pushlongpress1Prefabを入れる
-    public GameObject buttun_flick2;
+    //public GameObject buttun_flick2;
     //pushlongpress2Prefabを入れる
-    public GameObject buttun_longpress1;
+    //public GameObject buttun_longpress1;
     //pushflick1Prefabを入れる
-    public GameObject buttun_tap1;
+    //public GameObject buttun_tap1;
     //pushflick2Prefabを入れる
-    public GameObject buttun_tap2;
+    //public GameObject buttun_tap2;
     //pushtap1Prefabを入れる
-    public GameObject buttun_tap3;
+    //public GameObject buttun_tap3;
 
     public GameObject[] buttuns;
 
@@ -46,7 +46,7 @@ public class ButtunGenerator : MonoBehaviour
             int n = Random.Range(0, buttuns.Length);
 
             // キューブの生成
-            GameObject go = Instantiate(buttuns[n]) as GameObject;
+            GameObject go = Instantiate (buttuns[n]) as GameObject;
             go.transform.position = start;
 
             // 次のキューブまでの生成時間を決める
